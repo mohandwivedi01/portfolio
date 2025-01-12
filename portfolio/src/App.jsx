@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-      {/* <Sidebar /> */}
+      <Sidebar />
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
     </>
   )
 }
