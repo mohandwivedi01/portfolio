@@ -34,16 +34,16 @@ function Sidebar(){
                 {/* side links */}
                 <div className="flex flex-col justify-between items-center w-16 ">
                     <div className="flex flex-col justify-around items-center h-1/2">
-                        <Link to=""><FaClone size={30} color="gray" /></Link>
-                        <a href={github} target="_blank" ><FaGithub size={30} color="gray"/></a>
-                        <a href={linkedin} target="_blank" ><FaLinkedin size={30} color="gray" /></a>
-                        <a href={twitter} target="_blank" ><FaTwitter size={30} color="gray" /></a>
-                        <a href={whatsapp} target="_blank" ><FaWhatsapp size={30} color="gray" /></a>
-                        <a href={email} target="_blank" ><FaEnvelope  size={30} color="gray" /></a>
+                        <Link to="" ><FaClone className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></Link>
+                        <a href={github} target="_blank" ><FaGithub className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></a>
+                        <a href={linkedin} target="_blank" ><FaLinkedin className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></a>
+                        <a href={twitter} target="_blank" ><FaTwitter className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></a>
+                        <a href={whatsapp} target="_blank" ><FaWhatsapp className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></a>
+                        <a href={email} target="_blank" ><FaEnvelope  className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></a>
                     </div>
                     <div className="flex flex-col justify-around items-center h-1/6 mb-5">
-                        <Link to="/"><FaRegUserCircle size={30} color="gray" /></Link>
-                        <Link to="/"><FaRegSun size={30} color="gray" /></Link>
+                        <Link to="/"><FaRegUserCircle className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl"/></Link>
+                        <Link to="/"><FaRegSun className="text-3xl text-neutral-500 hover:text-neutral-200 hover:text-4xl" /></Link>
                     </div>
                 </div>
                 {/* side links end */}
@@ -62,37 +62,37 @@ function Sidebar(){
                         <div className="flex flex-col my-2 ml-3">
                             <ul className="flex flex-col">
                                 <li>
-                                    <NavLink to="/" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500`}>
+                                    <NavLink to="/" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500 hover:text-lg`}>
                                         <FaReact size={22} color="#39cfe3" />
                                         <span className="">home.jsx</span>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/about" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500`}>
+                                    <NavLink to="/about" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500 hover:text-lg`}>
                                         <FaHtml5 size={22} color="#ff663d" />
                                         <span className="">about.html</span>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/resume" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500`}>
+                                    <NavLink to="/resume" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500 hover:text-lg`}>
                                         <FaHashtag size={22} color="#08eab6" />
                                         <span className="">resume.css</span>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/contact" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500`}>
+                                    <NavLink to="/contact" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500 hover:text-lg`}>
                                         <FaJs size={22} color="#f6ec3f" />
                                         <span className="">contact.js</span>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/github" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500`}>
+                                    <NavLink to="/github" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500 hover:text-lg`}>
                                         <FaJava size={22} color="#f8553c" />
                                         <span className="">github.java</span>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/blog" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500`}>
+                                    <NavLink to="/blog" className={({isActive}) => `py-2 flex px-4 items-center gap-2 duration-200 ${isActive ? "bg-neutral-800 border-l border-l-orange-700 border-t border-t-orange-700 rounded-l-3xl" : "border border-gray-950"}    hover:text-orange-500 hover:text-lg`}>
                                         <FaPython size={22} color="#66ff15" />
                                         <span className="">blog.py</span>
                                     </NavLink>
