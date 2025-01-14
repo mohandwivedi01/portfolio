@@ -164,21 +164,21 @@ function Sidebar(){
             {/* main section end */}
 
             {/* footer started */}
-            <footer className="bg-gray-950">
+            <footer className="bg-gray-950 text-sm text-neutral-400">
                 <div className="flex justify-between border-t border-slate-700 py-1 px-6">
                     <div className="flex flex-row justify-start">
-                        <FaCodeBranch size={15} color="gray" className="mt-[3px]"/>
-                        <label className=" text-sm mx-2">main</label>
-                        <FaRegTimesCircle size={15} color="gray" className="mx-2 mt-[3px]"/>
-                        <FaExclamationTriangle size={15} color="gray" className="mt-[3px]"/>
+                        <FaCodeBranch className="mt-[3px]"/>
+                        <label className="mx-2">main</label>
+                        <FaRegTimesCircle className="mx-2 mt-[3px]"/>
+                        <FaExclamationTriangle className="mt-[3px]"/>
                     </div>
-                    <div className="flex  mx-5">
-                        <FaBezierCurve size={15} color="gray" className="mt-[1px] m-1"/>
-                        <label className="text-sm">Powered by React.js</label>
+                    <div className="flex  mx-5 ">
+                        <FaBezierCurve className="mt-[1px] m-1"/>
+                        <label>Powered by React.js</label>
                         <FaDiscord className="mt-[1px] m-1 ml-4" />
-                        <label className="text-sm">Go Live</label>
+                        <label >Go Live</label>
                         <FaCheckDouble className="mt-[1px] m-1 ml-4" />
-                        <label className="text-sm">Prettier</label>
+                        <label>Prettier</label>
                     </div>
                 </div>
             </footer>
