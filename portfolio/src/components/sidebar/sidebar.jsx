@@ -4,6 +4,8 @@ import { NavLink, Link, Links } from "react-router";
 
 function Sidebar(){
 
+    const [isTabOpen, setIsTabOpen] = React.useState(false);
+
     const github = "https://github.com/mohandwivedi01/";
     const linkedin = "https://www.linkedin.com/in/mohan-dwivedi/";
     const twitter = "https://x.com/ByteByByte_";
@@ -118,11 +120,11 @@ function Sidebar(){
                             <li className="">
                             <NavLink 
                                     to="/about"
-                                    className={({isActive}) => ` pl-5 pr-2 py-[6px] flex items-center gap-2 duration-200 ${isActive ? "block bg-neutral-800 border-t border-t-orange-700 border border-neutral-800": "hidden border border-neutral-800"}    hover:text-orange-500`}>
+                                    className={({isActive}) => `pl-5 pr-2 py-[6px] flex items-center gap-2 duration-200 ${isActive ? `${setIsTabOpen(true)} bg-neutral-800 border-t border-t-orange-700 border border-neutral-800`: " border border-neutral-800"} hover:text-orange-500 ${isTabOpen ? "block" : "hidden"}`}>
                                     <FaHtml5 size={22} color="#ff663d" />
                                     <span className="">about.html</span>
                                     {/* we'll look after some time */}
-                                    <FaBackspace size={20} className={() => `text-neutral-800 hover:text-neutral-500 `}/>
+                                    <button onClick={() => setIsTabOpen(false)}><FaBackspace size={20} className={() => `text-neutral-800 hover:text-neutral-500 `}/></button>
                                 </NavLink>
                             </li>
                             <li className="">
