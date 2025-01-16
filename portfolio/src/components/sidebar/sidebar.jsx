@@ -118,13 +118,15 @@ function Sidebar(){
                                 </NavLink>
                             </li>
                             <li className="">
-                            <NavLink 
+                                <NavLink 
                                     to="/about"
                                     className={({isActive}) => `pl-5 pr-2 py-[6px] flex items-center gap-2 duration-200 ${isActive ? `${setIsTabOpen(true)} bg-neutral-800 border-t border-t-orange-700 border border-neutral-800`: " border border-neutral-800"} hover:text-orange-500 ${isTabOpen ? "block" : "hidden"}`}>
-                                    <FaHtml5 size={22} color="#ff663d" />
+                                    <FaHtml5 size={22} color="#ff663d"/>
                                     <span className="">about.html</span>
                                     {/* we'll look after some time */}
-                                    <button onClick={() => setIsTabOpen(false)}><FaBackspace size={20} className={() => `text-neutral-800 hover:text-neutral-500 `}/></button>
+                                    <button onClick={(e) => { e.stopPropagation(); // Prevent NavLink click
+                                                                setIsTabOpen(false);
+                                                            }}><FaBackspace size={20} className={() => `text-neutral-800 hover:text-neutral-500 `}/></button>
                                 </NavLink>
                             </li>
                             <li className="">
